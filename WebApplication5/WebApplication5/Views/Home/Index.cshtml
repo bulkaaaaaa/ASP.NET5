@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<form method="post" asp-controller="Home"  asp-action="SetCookies">
+    <div>
+        <label for="valueInput">Значення:</label>
+        <input type="text" id="valueInput" name="myValue" />
+    </div>
+
+    <div>
+        <label for="datetimeInput">Дата та час:</label>
+        <input type="datetime-local" id="datetimeInput" name="expirationDate" />
+    </div>
+
+    <div>
+        <button type="submit">Зберегти в Cookies</button>
+    </div>
+</form>
+<script src="/_framework/aspnetcore-browser-refresh.js"></script>
